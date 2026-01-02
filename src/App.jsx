@@ -11,6 +11,9 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import TechSection from './components/TechSection';
+import StatsSection from './components/StatsSection';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,7 +49,11 @@ function App() {
         <Experience />
         <Projects />
         <Skills />
+        <TechSection/>
+        <StatsSection/>
         <Contact />
+
+
       </main>
       <Footer />
     </div>

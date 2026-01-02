@@ -39,17 +39,17 @@ const ProjectCard = ({ title, description, tags, link }) => {
       onMouseLeave={onLeave}
       
       data-speed="1.05"
-      className="bg-gradient-to-br from-purple-900/10 to-purple-950/10 border border-purple-800/30 rounded-xl p-8 transition-none group cursor-pointer will-change-transform"
+      className="bg-gradient-to-br from-blue-900/10 to-blue-950/10 border border-blue-800/30 rounded-xl p-8 transition-none group cursor-pointer will-change-transform"
     >
       <div className="flex justify-between items-start mb-6">
-        <h4 className="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors duration-700">
+        <h4 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors duration-700">
           {title}
         </h4>
         <a 
           href={link} 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-purple-400 hover:text-purple-300 transition-transform duration-500 hover:scale-110"
+          className="text-blue-400 hover:text-blue-300 transition-transform duration-500 hover:scale-110"
         >
           <ExternalLink size={24} />
         </a>
@@ -63,7 +63,7 @@ const ProjectCard = ({ title, description, tags, link }) => {
         {tags.map((tag, i) => (
           <span 
             key={i}
-            className="bg-purple-500/10 border border-purple-500/20 text-purple-300 px-4 py-1.5 rounded-full text-sm font-medium"
+            className="bg-blue-500/10 border border-blue-500/20 text-blue-300 px-4 py-1.5 rounded-full text-sm font-medium"
           >
             {tag}
           </span>

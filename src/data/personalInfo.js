@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "KATHIRVEL CHANDRASEKARAN",
 
   image: {
-    url: "profile.jpeg", 
+    url: "profile1.jpg", 
     alt: "Kathirvel Chandrasekaran "
   },
   title: "AI Developer | Q/A Enthusiast | Problem Solver | Java Coder",

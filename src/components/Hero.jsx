@@ -76,7 +76,7 @@ const Hero = () => {
   });
 
   return (
-    <section ref={container} className="min-h-screen flex items-center justify-center px-6 pt-20 pb-12 overflow-hidden bg-[#0a0a0a]">
+    <section ref={container} className="min-h-screen flex items-center justify-center px-6 pt-20 pb-12 overflow-hidden bg-black">
       {/* flex-col: Mobile & Tablet (stacked)
           lg:flex-row-reverse: Large screens (Desktop) switch to row
       */}
@@ -88,10 +88,10 @@ const Hero = () => {
             ref={imageWrapper}
             onMouseMove={onMouseMove}
             onMouseLeave={onMouseLeave}
-            className="hero-image w-64 h-64 md:w-80 md:h-80 rounded-2xl border-2 border-purple-500/30 p-2 bg-gradient-to-br from-purple-500/20 to-transparent shadow-2xl relative cursor-pointer"
+            className="hero-image w-64 h-64 md:w-80 md:h-80 rounded-2xl border-2 border-blue-500/30 p-2 bg-gradient-to-br from-blue-500/20 to-transparent shadow-2xl relative cursor-pointer"
             style={{ transformStyle: 'preserve-3d' }}
           >
-            <div className="absolute -inset-4 bg-purple-600/10 blur-2xl -z-10 rounded-full pointer-events-none"></div>
+            <div className="absolute -inset-4 bg-blue-600/10 blur-2xl -z-10 rounded-full pointer-events-none"></div>
             <img 
               src={personalInfo.image.url}
               alt={personalInfo.name}
@@ -103,12 +103,12 @@ const Hero = () => {
 
         {/* Content Container */}
         <div className="hero-content-wrapper text-center lg:text-left flex-1">
-          <h2 className="hero-name text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="hero-name text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">
            <span className='text-xl md:text-2xl text-gray-300 block mb-2 font-medium'>Hi, I am</span> 
            {personalInfo.name}
           </h2>
           
-          <p className="scramble-title text-xl md:text-2xl text-purple-300 font-mono mb-6 min-h-[1.5em]">
+          <p className="scramble-title text-xl md:text-2xl text-blue-300 font-mono mb-6 min-h-[1.5em]">
             {/* GSAP Managed */}
           </p>
           
@@ -117,10 +117,10 @@ const Hero = () => {
           </p>
           
           <div className="hero-btns flex flex-wrap gap-4 justify-center lg:justify-start">
-            <a href="#contact" className="bg-purple-600 hover:bg-purple-700 px-8 py-3 rounded-lg transition-all hover:scale-105 font-semibold text-white">
+            <a href="#contact" className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg transition-all hover:scale-105 font-semibold text-white">
               Get In Touch
             </a>
-            <a href="#projects" className="border border-purple-600/50 hover:bg-purple-600/10 px-8 py-3 rounded-lg transition-all font-semibold text-gray-200">
+            <a href="#projects" className="border border-blue-600/50 hover:bg-blue-600/10 px-8 py-3 rounded-lg transition-all font-semibold text-gray-200">
               View Work
             </a>
           </div>

@@ -52,13 +52,13 @@ const CustomCursor = () => {
       {/* Small Dot */}
       <div 
         ref={cursorRef}
-        className="fixed top-0 left-0 w-1.5 h-1.5 bg-purple-500 rounded-full pointer-events-none z-[9999] will-change-transform"
+        className="fixed top-0 left-0 w-1.5 h-1.5 bg-red-500 rounded-full pointer-events-none z-[9999] will-change-transform"
         style={{ marginTop: '-0.75px', marginLeft: '-0.75px' }} 
       />
       {/* Larger Follower */}
       <div 
         ref={followerRef}
-        className="fixed top-0 left-0 w-8 h-8 border border-purple-500/50 rounded-full pointer-events-none z-[9998] will-change-transform flex items-center justify-center transition-opacity duration-300"
+        className="fixed top-0 left-0 w-8 h-8 border border-red-500/50 rounded-full pointer-events-none z-[9998] will-change-transform flex items-center justify-center transition-opacity duration-300"
         style={{ marginTop: '-16px', marginLeft: '-16px' }} 
       />
     </div>

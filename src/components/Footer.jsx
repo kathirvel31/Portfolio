@@ -36,7 +36,7 @@ const Footer = () => {
   return (
     <footer 
       ref={footerRef} 
-      className="border-t border-purple-900/30 py-12 px-6 text-center text-gray-400"
+      className="border-t border-blue-900/30 py-12 px-6 text-center text-gray-400"
     >
       <div className="max-w-4xl mx-auto">
         <p className="footer-text text-sm uppercase tracking-widest mb-2 opacity-60">
@@ -44,7 +44,7 @@ const Footer = () => {
         </p>
         
         {/* Removed data-speed as we are not using ScrollSmoother anymore */}
-        <h4 className="footer-name text-xl font-bold text-purple-400 mb-6">
+        <h4 className="footer-name text-xl font-bold text-blue-400 mb-6">
           {/* GSAP will inject name */}
         </h4>
 

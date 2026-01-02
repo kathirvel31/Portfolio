@@ -48,11 +48,11 @@ const Skills = () => {
     <section 
       id="skills" 
       ref={container}
-      className="py-24 px-6 bg-gradient-to-b from-black to-purple-950/20"
+      className="py-24 px-6 bg-gradient-to-b from-black to-black-950/20"
     >
       <div className="max-w-4xl mx-auto">
-        <h3 className="text-4xl font-bold mb-12 text-purple-400">
-          Skills & Technologies
+        <h3 className="text-4xl font-bold mb-12 text-white text-center">
+          Skills
         </h3>
         
         <div className="flex flex-wrap gap-4">
@@ -62,7 +62,7 @@ const Skills = () => {
               onMouseEnter={onEnter}
               onMouseLeave={onLeave}
             
-              className="skill-badge cursor-default bg-gradient-to-br from-purple-900/20 to-purple-950/20 border border-purple-700/50 px-6 py-3 rounded-lg"
+              className="skill-badge cursor-default bg-gradient-to-br from-blue-900/20 to-blue-950/20 border border-blue-700/50 px-6 py-3 rounded-lg"
             >
               <span className="text-lg text-gray-200 pointer-events-none">
                 {skill}

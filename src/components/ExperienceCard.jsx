@@ -3,16 +3,16 @@ import { Calendar, Briefcase } from 'lucide-react';
 
 const ExperienceCard = ({ company, role, duration, location, description, achievements }) => {
   return (
-    <div className="relative pl-8 pb-12 border-l-2 border-purple-800/50 last:pb-0">
+    <div className="relative pl-8 pb-12 border-l-2 border-blue-800/50 last:pb-0">
       {/* Timeline dot */}
-      <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-purple-600 border-4 border-black"></div>
+      <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-black"></div>
       
-      <div className="bg-gradient-to-br from-purple-900/20 to-purple-950/20 border border-purple-800/30 rounded-lg p-6 hover:border-purple-600/50 transition">
+      <div className="bg-gradient-to-br from-blue-900/20 to-blue-950/20 border border-blue-800/30 rounded-lg p-6 hover:border-blue-600/50 transition">
         {/* Company and Role */}
         <div className="flex items-start justify-between mb-3 flex-wrap gap-2">
           <div>
             <h4 className="text-2xl font-bold text-white mb-1">{role}</h4>
-            <div className="flex items-center gap-2 text-purple-400">
+            <div className="flex items-center gap-2 text-blue-400">
               <Briefcase size={18} />
               <span className="text-lg font-semibold">{company}</span>
             </div>
@@ -38,7 +38,7 @@ const ExperienceCard = ({ company, role, duration, location, description, achiev
           <ul className="space-y-2">
             {achievements.map((achievement, index) => (
               <li key={index} className="flex items-start gap-2 text-gray-300">
-                <span className="text-purple-400 mt-1">▹</span>
+                <span className="text-blue-400 mt-1">▹</span>
                 <span>{achievement}</span>
               </li>
             ))}
